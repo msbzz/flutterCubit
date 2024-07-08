@@ -10,11 +10,12 @@ class MovieCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start ,
       children: [
         Card(
             clipBehavior: Clip.hardEdge,
             child: ConstrainedBox(
-              constraints: const BoxConstraints(minHeight: 200),
+              constraints: const BoxConstraints(minHeight: 200,maxHeight: 240),
               child: InkWell(
                   onTap: () {
                     Navigator.push(
@@ -27,6 +28,7 @@ class MovieCard extends StatelessWidget {
                   child: movie.imageURI != null
                       ? Ink(
                           width: double.infinity,
+                          height:240,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: NetworkImage(movie.imageURI!),
@@ -34,6 +36,8 @@ class MovieCard extends StatelessWidget {
                           ),
                         )
                       : Ink(
+                          width: double.infinity,
+                          height:240,
                           child: const Center(
                             child: Icon(Icons.error),
                           ),
