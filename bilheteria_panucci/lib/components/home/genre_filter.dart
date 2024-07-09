@@ -42,7 +42,7 @@ class _GenreFilterState extends State<GenreFilter> {
             }).toList(),
             onChanged: (String? value) {
               if (value != null) {
-                value=='todos'? widget.homeCubit.getMovies():widget.homeCubit.getMoviesByGenre(value);
+                value=='Todos'? widget.homeCubit.getMovies():widget.homeCubit.getMoviesByGenre(value);
                 setState(() {
                   dropdownValue = value;
                 });

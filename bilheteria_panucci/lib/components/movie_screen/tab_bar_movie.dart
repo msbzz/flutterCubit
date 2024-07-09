@@ -22,6 +22,7 @@ class TabBarMovie extends StatelessWidget {
                   tabs: [Tab(text: 'Sessões'), Tab(text: 'Detalhes')]),
             ),
             Expanded(
+              flex:2,
               child: TabBarView(
                 children: [
                   ListView(
