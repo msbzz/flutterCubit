@@ -19,4 +19,15 @@ class HomeCubit extends Cubit<HomeStates>{
     
   }
 
+    Future<void> getMoviesByGenre(String genre) async{
+    emit(HomeLoading());
+    try{
+       final List<Movie> movies = await homeService.fetchMoviesByGenre(genre);
+       emit(HomeSucess(movies));
+    }catch(e){
+       emit(HomeError('Não foi possivél carregar a lista de filmes deste genero'));
+    };
+    
+  }
+
 } 
