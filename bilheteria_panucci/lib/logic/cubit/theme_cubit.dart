@@ -8,4 +8,4 @@ class ThemeCubit extends Cubit<ThemeData>{
   void changeTheme(String genre){
     emit(MyThemes.getTheme(genre));
   }
-}
+} 
