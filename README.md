@@ -30,6 +30,8 @@ Ao clicar em um filme, todo o tema da aplicação deve ser alterado. Ao se trata
   
   - A troca de cor do tema da aplicação conforme o gênero, acionada quando abrimos a página de informações de um filme.
 
+  <img src="info/telas.png" alt="telas" width="380" height="440">
+
 Com essas implementações, foi visto :
 
  - Como separar o projeto em camadas (componentes visuais, modelos, telas e temas)
