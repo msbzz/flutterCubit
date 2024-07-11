@@ -30,19 +30,33 @@ Ao clicar em um filme, todo o tema da aplicação deve ser alterado. Ao se trata
   
   - A troca de cor do tema da aplicação conforme o gênero, acionada quando abrimos a página de informações de um filme.
 
-  <img src="info/telas.png" alt="telas" width="380" height="440">
+    - Tela principal e opções de filtro
 
-Com essas implementações, foi visto :
+  <img src="info/principal_filtro.png" alt="telas" width="300" height="320">
 
- - Como separar o projeto em camadas (componentes visuais, modelos, telas e temas)
- - Como é utilizar o padrão de gerenciamento de estados BLoC para criar a camada de lógica
- - Como utilizar o Home Cubit para carregar, tratar e devolver informações da API para a tela
- - Lidar com os estados da tela Home (inicial, de carregamento, de sucesso e de erro) 
-    criando o arquivo home_states.dart para representá-los
- - Chamar e recolher informações da Home por meio do BlocBuilder
- - Identificar os tipos de BLoC e os tipos de estado
- - Identificar as diferenças entre BLoC e Cubit e onde utilizá-los
- - Utilizar o BlocProvider com injeção de dependência na Main para lidar com BLoCs e Cubits em vários locais da aplicação
+    - Aplicação do filtro para genero comedias
+
+  <img src="info/filtro_comedia.png" alt="telas" width="300" height="320">
+
+      - Aplicação do filtro para genero terror
+
+  <img src="info/filtro terror.png" alt="telas" width="300" height="320">
+
+     - Mensagem de erro para genero não encontrado
+     
+  <img src="info/filtro_nao_encontrado.png" alt="telas" width="180" height="280">
+
+ - Com essas implementações, foi visto :
+
+    - Como separar o projeto em camadas (componentes visuais, modelos, telas e temas)
+    - Como é utilizar o padrão de gerenciamento de estados BLoC para criar a camada de lógica
+    - Como utilizar o Home Cubit para carregar, tratar e devolver informações da API para a tela
+    - Lidar com os estados da tela Home (inicial, de carregamento, de sucesso e de erro) 
+        criando o arquivo home_states.dart para representá-los
+    - Chamar e recolher informações da Home por meio do BlocBuilder
+    - Identificar os tipos de BLoC e os tipos de estado
+    - Identificar as diferenças entre BLoC e Cubit e onde utilizá-los
+    - Utilizar o BlocProvider com injeção de dependência na Main para lidar com BLoCs e Cubits em vários locais da aplicação
 
 
    
