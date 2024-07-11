@@ -1,4 +1,4 @@
-# Gerenciando estados com Provider
+# Gerenciando estados usando Cubit
 Este projeto é fruto do curso de 'Flutter: aplicando gerenciamento de estados com Cubit' da plataforma ALURA
 
 ## Introdução
